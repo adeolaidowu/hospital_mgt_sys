@@ -39,7 +39,12 @@ margin: 80px auto;
 .carousel{
     margin-bottom: 25px;
 }
-
+.forgotpass{
+    color: dodgerblue;
+}
+.icon-msg{
+    border-right: 2px solid dodgerblue;
+}
 .mid-section{
     margin: 130px;
 }
@@ -57,6 +62,12 @@ margin: 80px auto;
 }
 .services{
     text-align: center;
+}
+.sign-in{
+    background: url(images/priv-ward.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
 }
 /* footer styling */
 .footer{
@@ -76,4 +87,26 @@ margin: 80px auto;
 .footer_list li a{
     color: whitesmoke;
     text-decoration: none;
+}
+
+/* mobile responsiveness styling */
+@media(min-width:320px) and (max-width: 768px) {
+    .footer{
+        min-height: 250px;
+    }
+    .footer-main{
+        display: none;
+    }
+    .footer-mob{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-mob div{
+        margin:15px 0;
+        padding-top: 10px;
+    }
+    .footer-mob div a{
+        color: #fff;
+    }
 }

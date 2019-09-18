@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet"type="text/css"href="fontawesome/css/all.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			a {
+				color: inherit;
+			}
+			a:hover {
+				color: inherit;
+				transform: scale(1.1);
+			}
+			.box {
+				width: 200px;
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
+						<a class="navbar-brand" href="#"><img src="images/lag1.png" alt=""></a>
+						<button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse"id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link ml-2"href="#"><i class="fas fa-user-circle" style="font-size: 2.5em;"></i></a>
+								</li>
+								<li class="nav-item">
+									<span class="nav-link">Admin</span>
+								</li>
+								<li class="nav-item">
+									<a class="btn btn-primary shadow-none" href="admindash.html">Back</a>
+								</li>
+								<a class="nav-item nav-link" href="index.html">Sign out</a>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- admin control panel -->
+		<div class="container mt-5">
+				<h1 style="text-align: center;">Create a new Patient</h1>
+			<div class="row">
+				<div class="col-4 jumbotron" style="text-align:center;">
+					<div class="row">
+						<div class="col">
+							<div><i class="fas fa-user-circle" style="font-size: 7em; color: grey;"></i></div>
+							<button type="button" class="btn btn-outline-success my-2">Upload photo</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a class="nav-item nav-link activecust" href="admindash.html"><i class="fas fa-chart-line mr-1"></i>Dashboard</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a class="nav-item nav-link" href="allpatients.html"><i class="fa fa-users mr-1" title="email verification"></i>All Patients</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a class="nav-item nav-link" href="#"><i class="fas fa-envelope mr-1" title="email verification"></i>Messages</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a class="nav-item nav-link" href="#"><i class="fas fa-exclamation-circle mr-1"></i>Reports</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a class="nav-item nav-link" href="#"><i class="fa fa-cog mr-1" title="email verification"></i>Settings</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-8 ">
+                    <div class="form">
+                        <div id="msg"></div>
+                        <div id="err"></div>
+                        <div class="form-group">
+                            <label for="patientname">Name</label>
+                            <input type="text" class="form-control" id="patientname" name="patientname" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="patientemail">Email</label>
+                            <input type="email" class="form-control" name="patientemail" id="patientemail" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Phone</label>
+                            <input type="text" class="form-control" id="patientphone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="patientage">Age</label>
+                            <input type="text" class="form-control" id="patientage" name="patientage" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <label for="ailment">Known Ailments</label>
+                            <input type="text" class="form-control" name="ailment" id="ailment" placeholder="Ailment(s)">
+                        </div>
+                        <button class="btn btn-primary create">Create Patient</button>
+                    </div>
+				</div>
+				
+			</div>
+		</div>
+		 <!-- footer -->
+         <section class="footer">
+                <div class="container footer-main">
+                    <div class="row">
+                        <div class="col footer_content">
+                            <p style="border-bottom: 1px solid white;"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm footer_list">
+                            <ul>
+                                <li>Lagoon Hospitals</li>
+                                <li><a href="#">Departments</a></li>
+                                <li><a href="#">Help a child</a></li>
+                                <li><a href="#">Volunteers</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm footer_list">
+                            <ul>
+                                <li>About</li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Fees and charges</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm footer_list">
+                            <ul>
+                                <li>Our Doctors</li>
+                                <li><a href="#">Doctors by Category</a></li>
+                                <li><a href="#">Fundraiser events</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <p style="border-bottom: 1px solid white;"></p>
+                            <span style="color: white; margin-right: 30px;">Follow us</span>
+                            <i class="fab fa-facebook" style="font-size: 1.5em;"></i>
+                            <i class="fab fa-twitter mx-3" style="font-size: 1.5em;"></i>
+                            <i class="fab fa-instagram" style="font-size: 1.5em;"></i>
+                            <i class="fab fa-linkedin-in mx-3" style="font-size: 1.5em;"></i>
+                            <p style="border-top: 1px solid white;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-mob">
+                    <div><a href="#about">About Us</a></div>
+                    <div><a href="#">Our Doctors</a></div>
+                    <div><a href="#">Terms of Service</a></div>
+                    <div><a href="#">Careers</a></div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <p style="font-size: 14px;">&copy; 2019 Lagoon Hospitals All rights reserved | Made with ❤️ by DevHaz</p>
+                    </div>
+                </div>
+            </section>
+
+
+		
+		
+			
+		<!-- jquery -->
+		<script type="text/javascript" src="bootstrap/js/jquery-3.4.0.js"></script>
+		<!-- popper -->
+		<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+		<!-- Bootstrap JS>-->
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
