@@ -5,6 +5,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+}
 hr {
     border-style: none;
     border-bottom-style: solid;
@@ -19,6 +22,7 @@ a{
 ul li{
     list-style: none;
 }
+/* top-section styling */
 .container-fluid {
     padding-right:0;
     padding-left:0;
@@ -42,14 +46,19 @@ margin: 80px auto;
 .forgotpass{
     color: dodgerblue;
 }
+/* mid-section styling */
+
 .icon-msg{
     border-right: 2px solid dodgerblue;
 }
-.mid-section{
-    margin: 130px;
-}
 .icon{
     margin-right: 15px;
+}
+.mid-section{
+    margin: 100px auto;
+}
+.mid{
+    margin: 0 auto;
 }
 .statistics{
     min-height: 200px;
@@ -63,6 +72,7 @@ margin: 80px auto;
 .services{
     text-align: center;
 }
+/* styling sign-in form */
 .sign-in{
     background: url(images/priv-ward.jpg);
     background-repeat: no-repeat;
@@ -91,6 +101,26 @@ margin: 80px auto;
 
 /* mobile responsiveness styling */
 @media(min-width:320px) and (max-width: 768px) {
+    label.signin{
+        /* visibility: hidden; */
+    }
+    #about{
+        padding: 10px;
+    }
+    .carousel-img{
+        height: 300px;
+    }
+    .mid{
+        margin: 0 auto;
+    }
+    .statistics{
+        padding-top: 15px;
+    }
+    .services-img{
+        width: 250px;
+        height: 250px;
+    }
+    /* resp styling for footer */
     .footer{
         min-height: 250px;
     }

@@ -17,10 +17,6 @@
 				color: inherit;
 				transform: scale(1.1);
 			}
-			.box {
-				width: 200px;
-				height: 150px;
-			}
 		</style>
 	</head>
 	<body>
@@ -46,7 +42,7 @@
 											Create a Patient
 									</a>
 								</li>
-								<a class="nav-item nav-link" href="index.html">Sign out</a>
+								<a class="nav-item nav-link signout" href="#">Sign out</a>
 								
 							</ul>
 						</div>
@@ -93,90 +89,25 @@
 					</div>
 				</div>
 				<div class="col-8 ">
-					<form>
+					<div>
 						<div class="row">
 							<div class="col">
-							<input type="text" class="form-control" placeholder="Name" name="searchname">
+							<input type="text" class="form-control" placeholder="Enter patient full name" name="searchname" id="searchname">
 							</div>
-							<div class="col">
-							<input type="text" class="form-control" placeholder="Age" name="searchage">
-							</div>
-							<button class="btn btn-primary">Search Patient</button>
+							<button class="btn btn-outline-info shadow-none fetchpatient">Search Patient</button>
 						</div>
-					</form>
+					</div>
+					<div class="mt-5 show-single"></div>
 				</div>
 				
 			</div>
 		</div>
-		 <!-- footer -->
-		 <section class="footer">
-				<div class="container footer-main">
-					<div class="row">
-						<div class="col footer_content">
-							<p style="border-bottom: 1px solid white;"></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm footer_list">
-							<ul>
-								<li>Lagoon Hospitals</li>
-								<li><a href="#">Departments</a></li>
-								<li><a href="#">Help a child</a></li>
-								<li><a href="#">Volunteers</a></li>
-								<li><a href="#">Careers</a></li>
-							</ul>
-						</div>
-						<div class="col-sm footer_list">
-							<ul>
-								<li>About</li>
-								<li><a href="#">Contact us</a></li>
-								<li><a href="#">Security</a></li>
-								<li><a href="#">Terms of service</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Fees and charges</a></li>
-							</ul>
-						</div>
-						<div class="col-sm footer_list">
-							<ul>
-								<li>Our Doctors</li>
-								<li><a href="#">Doctors by Category</a></li>
-								<li><a href="#">Fundraiser events</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md">
-							<p style="border-bottom: 1px solid white;"></p>
-							<span style="color: white; margin-right: 30px;">Follow us</span>
-							<i class="fab fa-facebook" style="font-size: 1.5em;"></i>
-							<i class="fab fa-twitter mx-3" style="font-size: 1.5em;"></i>
-							<i class="fab fa-instagram" style="font-size: 1.5em;"></i>
-							<i class="fab fa-linkedin-in mx-3" style="font-size: 1.5em;"></i>
-							<p style="border-top: 1px solid white;"></p>
-						</div>
-					</div>
-				</div>
-				<div class="footer-mob">
-					<div><a href="#about">About Us</a></div>
-					<div><a href="#">Our Doctors</a></div>
-					<div><a href="#">Terms of Service</a></div>
-					<div><a href="#">Careers</a></div>
-				</div>
-				<div class="row">
-					<div class="col d-flex justify-content-center">
-						<p style="font-size: 14px;">&copy; 2019 Lagoon Hospitals All rights reserved | Made with ❤️ by DevHaz</p>
-					</div>
-				</div>
-			</section>
-
-			
 		<!-- jquery -->
 		<script type="text/javascript" src="bootstrap/js/jquery-3.4.0.js"></script>
 		<!-- popper -->
 		<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
 		<!-- Bootstrap JS>-->
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script src="admindash.js" type="text/javascript"></script>
 	</body>
 </html>

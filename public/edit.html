@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet"type="text/css"href="fontawesome/css/all.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			a {
+				color: inherit;
+			}
+			a:hover {
+				color: inherit;
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
+						<a class="navbar-brand" href="#"><img src="images/lag1.png" alt=""></a>
+						<button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse"id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link ml-2"href="#"><i class="fas fa-user-circle" style="font-size: 2.5em;"></i></a>
+								</li>
+								<li class="nav-item">
+									<span class="nav-link">Admin</span>
+								</li>
+								<li class="nav-item">
+									<a class="btn btn-primary shadow-none" href="admindash.html">
+											Back to Dash
+									</a>
+								</li>
+								<a class="nav-item nav-link" href="index.html">Sign out</a>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- for to edit patient -->
+		<div class="container">
+            <div class="row">
+                <div class="form">
+                    <div id="msg"></div>
+                    <div id="err"></div>
+                    <div class="form-group">
+                        <label for="patientname">Name</label>
+                        <input type="text" class="form-control" id="patientname" name="patientname" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientemail">Email</label>
+                        <input type="email" class="form-control" name="patientemail" id="patientemail" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone</label>
+                        <input type="text" class="form-control" id="patientphone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientage">Age</label>
+                        <input type="text" class="form-control" id="patientage" name="patientage" placeholder="Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="ailment">Known Ailments</label>
+                        <input type="text" class="form-control" name="ailment" id="ailment" placeholder="Ailment(s)">
+                    </div>
+                    <button class="btn btn-primary update">Update Patient</button>
+                </div>
+            </div>
+        </div>
+		<!-- jquery -->
+		<script type="text/javascript" src="bootstrap/js/jquery-3.4.0.js"></script>
+		<!-- popper -->
+		<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+		<!-- Bootstrap JS>-->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script src="edit.js" type="text/javascript"></script>
+	</body>
+</html>

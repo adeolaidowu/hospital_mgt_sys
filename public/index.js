@@ -1,19 +1,29 @@
 // form validation
 $(document).ready(function(){
-   
+    let msg = "Patient has been successfully checked into the system";
+    
     //function to validate form input
     $('.submit').click(function(f){
         let userName = $('#username').val().toLowerCase();
         let password = $('#password').val();
-        if(password == "" || userName == "") {
-            $('#error-msg').html('You must fill out all fields*');
-            f.preventDefault();
-        }else if(userName != "admin" || password != "dilligrout") {
-            $('#error-msg').html('Invalid username or password');
-            f.preventDefault();
-        }else{
-            window.location = "admindash.html";
-        }
+        $.ajax({
+            url: `http://localhost:3000/users/1`,
+            method: 'get'
+        }).done(function(user){
+            if(password == "" || userName == "") {
+                $('#error-msg').html('You must fill out all fields*');
+                f.preventDefault();
+            }else if(userName != user.name || password != user.password) {
+                $('#error-msg').html('Invalid username or password');
+                f.preventDefault();
+            }else{
+                //localStorage.setItem('admin', JSON.stringify(user));
+                localStorage.admin = JSON.stringify(user) 
+                window.location = "admindash.html";
+                
+            }
+        })
+        
     });
 
     //check if patient exists before creating new
@@ -50,19 +60,11 @@ $(document).ready(function(){
                     ailments
                 }
             }).done(function(){
-                // $('#msg').append(`<p class="alert alert-success">A new patient has been checked in</p>`);
-                // // setTimeout(() => {
-                // //     window.location = "admindash.html"
-                // // }, 9000) 
-                window.location = "http://localhost:3000/admindash.html";
+                window.location =  `admindash.html?msg=${msg}`;
                
                 
             })
-
         })
-
-       
-        
     })
     
 })

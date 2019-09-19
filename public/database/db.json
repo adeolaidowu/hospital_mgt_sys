@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 1,
-      "name": "Kenpachi",
-      "password": "1234",
-      "email": "zaraki@email.com"
+      "name": "admin",
+      "password": "dilligrout",
+      "email": "admin@lagoon.com"
     }
   ],
   "patients": [
@@ -18,24 +18,11 @@
     },
     {
       "name": "ade",
+      "age": "27",
       "email": "abel@gmail.com",
       "phone": "08178009933",
       "ailments": "malaria",
       "id": 2
-    },
-    {
-      "name": "Haz",
-      "email": "haz@gmail.com",
-      "phone": "0917232530",
-      "ailments": "diabetes",
-      "id": 3
-    },
-    {
-      "name": "Gabriel Mong",
-      "email": "gab@email.com",
-      "phone": "01234567891",
-      "ailments": "HIV",
-      "id": 4
     },
     {
       "name": "Antonin Dolohov",
@@ -45,11 +32,28 @@
       "id": 5
     },
     {
+      "name": "Helen Mirren",
+      "email": "helen@hollywood.com",
+      "age": "53",
+      "phone": "01-555-3245",
+      "ailments": "amnesia, paranoia",
+      "id": 7
+    },
+    {
+      "name": "Samantha",
+      "email": "sam@psl.com",
+      "age": "33",
+      "phone": "01-772-9230",
+      "ailments": "daddy issues",
+      "id": 8
+    },
+    {
       "name": "yaxley",
       "email": "yaxley@email.com",
-      "phone": "08178009944",
-      "ailments": "sorcery",
-      "id": 6
+      "age": "43",
+      "phone": "08072292345",
+      "ailments": "wizardry",
+      "id": 9
     }
   ]
 }
