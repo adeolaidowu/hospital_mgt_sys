@@ -3,7 +3,7 @@ let urlParams = new URLSearchParams(window.location.search);
 let msg = urlParams.get('msg');
 let successmg = urlParams.get('successmsg');
 if(msg !== null){
-    $('.showmsg').html(`<p class='alert alert-success'>${msg}</p>`)
+    $('.showmsg').html(`<p class='alert alert-success'>${msg}</p>`).fadeOut(10000)
 }
 
      //get all patients

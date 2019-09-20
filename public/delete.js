@@ -1,7 +1,9 @@
 $(document).ready(function(){
 let msg = "You have successfully deleted a patient";
+//get patientid from query string
 let urlParams = new URLSearchParams(window.location.search);
 let patientId = urlParams.get('patientid');
+//get all patients using patientid and confirm delete
 $.ajax({
     url: `http://localhost:3000/patients/${patientId}`,
     method: "get"

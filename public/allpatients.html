@@ -54,13 +54,29 @@
 				</div>
 			</div>
 		</div>
+		<!-- navigation for mobile -->
+		<ul class="nav nav-pills nav-fill nav-mob">
+			<li class="nav-item">
+				<a class="nav-link" href="admindash.html"><i class="fas fa-chart-line mr-1"></i>Dashboard</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="allpatients.html"><i class="fa fa-users mr-1" title="email verification"></i>All Patients</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="fas fa-exclamation-circle mr-1"></i>Reports</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-item nav-link" href="#"><i class="fa fa-cog mr-1"></i>Settings</a>
+			</li>
+		  </ul>
 		<!-- admin control panel -->
 		<div id="success-msg"></div>
+		<div class="showmsg"></div>
 		<div class="container mt-5">
-			<div class="showmsg"></div>
 				<h2 style="text-align: center;">All Patients</h2>
+				<hr>
 			<div class="row">
-				<div class="col-4 jumbotron" style="text-align:center;">
+				<div class="col-md-4 jumbotron panel" style="text-align:center;">
 					<div class="row">
 						<div class="col">
 							<div><i class="fas fa-user-circle" style="font-size: 7em; color: grey;"></i></div>
@@ -88,7 +104,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-8 ">
+				<div class="col-md-8 ">
 					<div class="showpatients">
                         <table class="table table-bordered table-striped table-dark">
                             <thead>
@@ -115,5 +131,6 @@
 		<!-- Bootstrap JS>-->
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 		<script src="allpatients.js" type="text/javascript"></script>
+		
 	</body>
 </html>

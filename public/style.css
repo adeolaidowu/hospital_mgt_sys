@@ -46,6 +46,11 @@ margin: 80px auto;
 .forgotpass{
     color: dodgerblue;
 }
+.nav-mob{
+    display: none;
+    
+
+}
 /* mid-section styling */
 
 .icon-msg{
@@ -102,7 +107,7 @@ margin: 80px auto;
 /* mobile responsiveness styling */
 @media(min-width:320px) and (max-width: 768px) {
     label.signin{
-        /* visibility: hidden; */
+        display: none;
     }
     #about{
         padding: 10px;
@@ -119,6 +124,17 @@ margin: 80px auto;
     .services-img{
         width: 250px;
         height: 250px;
+    }
+    /* inner webapp styling */
+    .welcome-msg{
+        font-size: 1.5em;
+    }
+    .panel{
+        display:none;
+    }
+    .nav-mob{
+        display:flex;
+        font-size: 14px;
     }
     /* resp styling for footer */
     .footer{

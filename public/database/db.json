@@ -33,8 +33,8 @@
     },
     {
       "name": "Helen Mirren",
+      "age": "54",
       "email": "helen@hollywood.com",
-      "age": "53",
       "phone": "01-555-3245",
       "ailments": "amnesia, paranoia",
       "id": 7
@@ -54,6 +54,14 @@
       "phone": "08072292345",
       "ailments": "wizardry",
       "id": 9
+    },
+    {
+      "name": "Haz",
+      "age": "39",
+      "email": "haz@email.com",
+      "phone": "08178009955",
+      "ailments": "anxiety,depression",
+      "id": 10
     }
   ]
 }

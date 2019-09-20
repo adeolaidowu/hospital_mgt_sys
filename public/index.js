@@ -61,10 +61,11 @@ $(document).ready(function(){
                 }
             }).done(function(){
                 window.location =  `admindash.html?msg=${msg}`;
-               
-                
             })
         })
     })
+    
+    //let admin = JSON.parse(window.localStorage.getItem('admin'));
+   
     
 })

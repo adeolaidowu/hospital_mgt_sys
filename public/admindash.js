@@ -51,7 +51,6 @@ if(successmsg !== null){
             return
         })
     })
-    //let admin = JSON.parse(window.localStorage.getItem('admin'));
     $('.signout').click(function(e){
         e.preventDefault();
         // localStorage.clear();
