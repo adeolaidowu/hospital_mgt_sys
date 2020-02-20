@@ -9,23 +9,16 @@
   ],
   "patients": [
     {
-      "id": 1,
       "name": "Kenpachi",
+      "age": "45",
       "email": "zaraki@email.com",
       "phone": "08178019236",
-      "age": "45",
-      "ailments": "malaria"
-    },
-    {
-      "name": "ade",
-      "age": "27",
-      "email": "abel@gmail.com",
-      "phone": "08178009933",
-      "ailments": "malaria",
-      "id": 2
+      "ailments": "Murderous intent",
+      "id": 1
     },
     {
       "name": "Antonin Dolohov",
+      "age": "25",
       "email": "dolohov@gmail.com",
       "phone": "07023042432",
       "ailments": "wizadry",
@@ -40,25 +33,17 @@
       "id": 7
     },
     {
-      "name": "Samantha",
-      "email": "sam@psl.com",
+      "name": "Samantha Wheeler",
       "age": "33",
+      "email": "sam@psl.com",
       "phone": "01-772-9230",
       "ailments": "daddy issues",
       "id": 8
     },
     {
-      "name": "yaxley",
-      "email": "yaxley@email.com",
-      "age": "43",
-      "phone": "08072292345",
-      "ailments": "wizardry",
-      "id": 9
-    },
-    {
       "name": "Haz",
       "age": "39",
-      "email": "haz@email.com",
+      "email": "dev_haz@email.com",
       "phone": "08178009955",
       "ailments": "anxiety,depression",
       "id": 10

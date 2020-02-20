@@ -44,7 +44,8 @@ $(document).ready(function(){
             method: "get"
         }).done(function(patients){
             for(let patient of patients){
-                if(patient.email === email && patient.name === name){
+                if(patient.email === email && patient.name.toLowerCase()
+                 === name.toLowerCase()){
                      $('#msg').append(`<p class="alert alert-danger">This patient already exists</p>`);
                     return
                 }
@@ -65,7 +66,7 @@ $(document).ready(function(){
         })
     })
     
-    //let admin = JSON.parse(window.localStorage.getItem('admin'));
+    
    
     
 })
